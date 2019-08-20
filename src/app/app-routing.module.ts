@@ -8,7 +8,16 @@ import { HelloComponent } from './hello.component';
 const routes: Routes = [
   {
     path: 'admin',
-    component: AdminComponent, 
+    component: AdminComponent, children : [
+      {
+      path: 'adminsub1',
+      component: AdminSub1Component
+      },
+      {
+        path: 'adminsub2',
+        component: AdminSub2Component
+      }
+    ]
   }, 
   {
     path: 'user',
