@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
+import { AdminSub1Component } from './admin/adminsub1/adminsub1.component';
+import { AdminSub2Component } from './admin/adminsub2/adminsub2.component';
 import { UserComponent } from './user/user.component';
 import { HelloComponent } from './hello.component';
 
