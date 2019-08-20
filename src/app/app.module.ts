@@ -10,13 +10,13 @@ import { AdminSub2Component } from './admin/adminsub2/adminsub2.component';
 
 import { UserComponent } from './user/user.component'; 
 
-//import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
   declarations: [ AppComponent, HelloComponent, AdminComponent, AdminSub1Component, AdminSub2Component, UserComponent ],
   bootstrap:    [ AppComponent ]
 })

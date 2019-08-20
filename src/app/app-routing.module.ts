@@ -1,4 +1,4 @@
-/* import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { AdminSub1Component } from './admin/adminsub1/adminsub1.component';
@@ -10,24 +10,24 @@ import { HelloComponent } from './hello.component';
 const routes: Routes = [
   {
     path: 'admin',
-    component: AdminComponent, children : [
+    component: AdminComponent, children: [
       {
-      path: 'adminsub1',
-      component: AdminSub1Component
+        path: 'adminsub1',
+        component: AdminSub1Component
       },
       {
         path: 'adminsub2',
         component: AdminSub2Component
       }
     ]
-  }, 
+  },
   {
     path: 'user',
-    component: UserComponent, 
+    component: UserComponent,
   },
   {
     path: 'hello',
-    component: HelloComponent, 
+    component: HelloComponent,
   }
 ];
 
@@ -37,4 +37,3 @@ const routes: Routes = [
   providers: []
 })
 export class AppRoutingModule { }
- */
