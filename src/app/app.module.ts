@@ -10,7 +10,7 @@ import { AdminSub2Component } from './admin/adminsub2/adminsub2.component';
 
 import { UserComponent } from './user/user.component'; 
 
-import { AppRoutingModule } from './app-routing.module';
+//import { AppRoutingModule } from './app-routing.module';
 
 
 

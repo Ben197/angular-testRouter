@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/* import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { AdminSub1Component } from './admin/adminsub1/adminsub1.component';
@@ -37,3 +37,4 @@ const routes: Routes = [
   providers: []
 })
 export class AppRoutingModule { }
+ */
