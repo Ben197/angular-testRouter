@@ -2,3 +2,7 @@
 
 <h1>Suppliers</h1>
 <p>The supplier for us is: {{ currentSupplier.description }} </p>
+<p>Products:</p>
+<ng-container *ngFor="let product of currentSupplier.products">
+  <p>{{product}}</p>
+</ng-container>

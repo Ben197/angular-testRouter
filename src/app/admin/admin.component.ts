@@ -10,8 +10,8 @@ import { Supplier } from '../interfaces/supplier'
 
 export class AdminComponent implements OnInit {
 
-  currentSupplier : Supplier  = {id: 1, description: 'Supplier AlbertHeyn', orders: 
-  ['order1', 'order2', 'order3']};
+  currentSupplier : Supplier  = {id: 1, description: 'Albert Heyn', products: 
+  ['Cheese', 'Butter', 'Eggs']};
 
   selection = 1;
   constructor() {}

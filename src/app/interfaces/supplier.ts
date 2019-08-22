@@ -1,6 +1,6 @@
 export interface Supplier {
   id: number;
   description: string;
-  orders: string[]
+  products: string[]
   changedby?: string;
 }
