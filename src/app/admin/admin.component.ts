@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Supplier } from '../interfaces/supplier'
 
 
 @Component({
@@ -7,22 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 
-
 export class AdminComponent implements OnInit {
-  keuze = 1;
+
+  currentSupplier : Supplier  = {id: 1, description: 'test1', orders: 
+  ['order1', 'order2', 'order3']};
+
+  selection = 1;
   constructor() {}
 
   ngOnInit() {
 
   }
 
-  keuze1(){
-    this.keuze = 1;
+  selection1(){
+    this.selection = 1;
   }
 
-    keuze2(){
-    this.keuze = 2;
-  }
-
-  
+    selection2(){
+    this.selection = 2;
+  }  
 }
+
+

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Supplier } from '../../interfaces/supplier'
 
 @Component({
   selector : 'app-adminsub2',
@@ -9,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class AdminSub2Component implements OnInit {
 
+  @Input() currentSupplier : Supplier;
+
   constructor() {}
 
   ngOnInit () {
+
+    console.log('Current supplier is: ' + this.currentSupplier.description)
 
   }
 

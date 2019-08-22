@@ -6,20 +6,21 @@
     <nav>
       <a>Navigation:</a>
       <ul>
-        <li><a (click)="keuze1()" routerLink="/admin/adminsub1">Admin</a></li>
-        <li><a (click)="keuze2()" routerLink="/admin/adminsub2">Admin</a></li>
+        <li><a (click)="selection1()" routerLink="adminsub1">AdminSub1</a></li>
+        <li><a (click)="selection2()" routerLink="adminsub2">AdminSub2</a></li>
       </ul>
     </nav>
 
-    <ng-container [ngSwitch]="keuze">
+    <ng-container [ngSwitch]="selection">
 
-      <app-adminsub1 *ngSwitchCase="1">
-
-      </app-adminsub1>
-
-      <app-adminsub1 *ngSwitchCase="2">
+      <app-adminsub1 *ngSwitchCase="1" >
 
       </app-adminsub1>
+
+      <app-adminsub2 *ngSwitchCase="2" [currentSupplier]=currentSupplier>
+
+      </app-adminsub2>
+
     </ng-container>
  
 
