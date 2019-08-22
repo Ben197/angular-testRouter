@@ -9,11 +9,19 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class AdminComponent implements OnInit {
-
+  keuze = 1;
   constructor() {}
 
   ngOnInit() {
 
+  }
+
+  keuze1(){
+    this.keuze = 1;
+  }
+
+    keuze2(){
+    this.keuze = 2;
   }
 
   

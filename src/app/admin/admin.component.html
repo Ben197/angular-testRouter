@@ -1,16 +1,25 @@
 <p>Admin works</p>
-<app-adminsub1></app-adminsub1>
+<!-- <app-adminsub1></app-adminsub1>
 <app-adminsub2></app-adminsub2>
+ -->
 
-<div>
     <nav>
       <a>Navigation:</a>
       <ul>
-        <li><a routerLink="/admin">Admin</a></li>
-        <li><a routerLink="/user">User</a></li>
-        <li><a routerLink="/hello">home</a></li>
+        <li><a (click)="keuze1()" routerLink="/adminsub1">Admin</a></li>
+        <li><a (click)="keuze2()" routerLink="/adminsub2">Admin</a></li>
       </ul>
     </nav>
+
+    <ng-container [ngSwitch]="keuze">
+
+      <app-adminsub1 *ngSwitchCase="1">
+
+      </app-adminsub1>
+
+      <app-adminsub1 *ngSwitchCase="2">
+
+      </app-adminsub1>
+    </ng-container>
  
-    <router-outlet></router-outlet>
-  </div>
+

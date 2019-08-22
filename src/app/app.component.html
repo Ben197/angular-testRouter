@@ -3,8 +3,15 @@
   Start editing to see some magic happen :)
 </p>
 
-<!-- this works -->
-<app-user></app-user>
-
-<!-- this doesnt work damned, fck tool -->
-<app-admin></app-admin>
+<div>
+    <nav>
+      <a>Navigation:</a>
+      <ul>
+        <li><a routerLink="/admin">Admin</a></li>
+        <li><a routerLink="/user">User</a></li>
+        <li><a routerLink="/hello">home</a></li>
+      </ul>
+    </nav>
+ 
+    <router-outlet></router-outlet>
+  </div>
