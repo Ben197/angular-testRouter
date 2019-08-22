@@ -10,7 +10,7 @@ import { Supplier } from '../interfaces/supplier'
 
 export class AdminComponent implements OnInit {
 
-  currentSupplier : Supplier  = {id: 1, description: 'Albert Heyn', products: 
+  currentSupplier : Supplier  = {id: 1, description: 'Grocery world', products: 
   ['Cheese', 'Butter', 'Eggs']};
 
   selection = 1;
